@@ -5,14 +5,13 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-   <package name="action" extends="struts-default">
-       <action name="first">
-           <result>first.jsp</result>
-       </action>
-   </package>
 
-    <package name="action" extends="struts-default">
-        <action name="login">
+    <constant name="struts.devMode" value="true" />
+
+    <package name="action"  extends="struts-default">
+        <action name="login"
+                 class="action.LoginAction"
+                 method="execute">
             <result name="success">login_success.jsp</result>
             <result name="failure">login_failure.jsp</result>
             <result name="unknown">login.jsp</result>

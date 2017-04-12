@@ -4,7 +4,7 @@ package action;
  * Created by kingwen on 2017/4/12.
  */
 public class LoginAction {
-    public String username;
+    public String username="345";
     public String userpwd;
 
     public String getUsername() {
@@ -24,6 +24,8 @@ public class LoginAction {
     }
 
     public String execute(){
+
+
         return "success";
     }
 
